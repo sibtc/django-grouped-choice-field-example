@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Site</title>
+</head>
+<body>
+  <h2>Basic Form</h2>
+  {{ expense_form.as_p }}
+  
+  <hr>
+
+  <h2>Basic Form with Grouped Choices</h2>
+  {{ grouped_expense_form.as_p }}
+
+  <hr>
+
+  <h2>Model Form</h2>
+  {{ expense_model_form.as_p }}
+
+  <hr>
+
+  <h2>Model Form with Grouped Choices</h2>
+  {{ grouped_expense_model_form.as_p }}
+
+</body>
+</html>
