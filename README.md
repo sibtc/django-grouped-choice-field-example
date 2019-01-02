@@ -31,7 +31,7 @@ Finally, run the development server:
 python manage.py runserver
 ```
 
-The site will be available at **127.0.0.1:8000/**.
+The site will be available at **127.0.0.1:8000**.
 
 
 ## License
