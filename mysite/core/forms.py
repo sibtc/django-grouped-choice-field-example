@@ -47,7 +47,10 @@ class ExpenseModelForm(forms.ModelForm):
 
 
 class GroupedExpenseModelForm(forms.ModelForm):
-    category = GroupedModelChoiceField(queryset=Category.objects.exclude(parent=None), choices_groupby='parent')
+    category = GroupedModelChoiceField(
+        queryset=Category.objects.select_related('parent').exclude(parent=None),
+        choices_groupby='parent',
+    )
 
     class Meta:
         model = Expense
